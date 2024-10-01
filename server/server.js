@@ -14,7 +14,7 @@ app.use(cors({ origin: "http://localhost:3000" }));
 app.use(express.json());
 
 const apiKey =
-  process.env.GEMINI_API_KEY || "AIzaSyBBVPYH6BYN-MBYOh6FtAshCkb6TLsggu8";
+  process.env.GEMINI_API_KEY || "******";
 const genAI = new GoogleGenerativeAI(apiKey);
 
 const model = genAI.getGenerativeModel({
